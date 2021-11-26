@@ -10,3 +10,7 @@
 - Lottie
 - pierfrancescosoffritti.androidyoutubeplayer
 - smarteist:autoimageslider
+
+ ## Author
+
+* **Wahyu Santoso**
