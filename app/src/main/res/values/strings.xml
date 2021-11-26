@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Movie Trailer</string>
+
+    <string name="title_search">Search</string>
+    <string name="title_action">Action</string>
+    <string name="title_adventure">Adventure</string>
+    <string name="title_comedy">Comedy</string>
+    <string name="tittle_horor">Horor</string>
+    <string name="judul_film">Title Movie</string>
+    <string name="title_duration">Durations</string>
+    <string name="value_duration">00:00</string>
+    <string name="value_rate">5.4/10 from 3972 users</string>
+    <string name="value_genre">Action-Adventure</string>
+    <string name="example_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="overview">Overview</string>
+    <string name="top_movie">Top Movie</string>
+    <string name="tentang">tentang</string>
+    <string name="rpl">RPL - Kelompok 7</string>
+    <string name="thanks">Thanks to :</string>
+    <string name="contributor">- Budi Wahyu \n- Muhammad Zikra H.R \n- Wahyu Santoso</string>
+    <string name="contact">Contact: wahyusantoso.id@gmail.com</string>
+    <string name="close">Close</string>
+</resources>

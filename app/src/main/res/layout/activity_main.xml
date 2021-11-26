@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ui.halamanutama.MainActivity">
+
+    <LinearLayout
+        style="@style/layoutSearchStyle"
+        android:id="@+id/layout_search1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/fab_favorite">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_halaman_utama"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:queryHint="@string/title_search"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/layout_search1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ScrollView
+        android:id="@+id/layout_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@id/layout_search1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/textStyle"
+                android:id="@+id/title_top_movie"
+                android:text="@string/top_movie"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/banner_poster"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="14dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#5A5A5A"
+                app:sliderIndicatorUnselectedColor="#FFF"
+                app:sliderScrollTimeInSec="2"
+                app:sliderStartAutoCycle="true"
+                app:layout_constraintTop_toBottomOf="@id/title_top_movie"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                style="@style/textStyle"
+                android:id="@+id/action"
+                android:text="@string/title_action"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/banner_poster" />
+
+            <ImageButton
+                style="@style/imageButtonStyle"
+                android:id="@+id/icon_action"
+                app:layout_constraintBottom_toBottomOf="@+id/action"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/action"
+                tools:ignore="ContentDescription" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                style="@style/recyclerviewStyle"
+                android:id="@+id/rv_action"
+                app:layout_constraintTop_toBottomOf="@id/icon_action"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                style="@style/textStyle"
+                android:id="@+id/adventure"
+                android:text="@string/title_adventure"
+                app:layout_constraintTop_toBottomOf="@id/rv_action"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageButton
+                style="@style/imageButtonStyle"
+                android:id="@+id/icon_adventure"
+                app:layout_constraintBottom_toBottomOf="@+id/adventure"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/adventure"
+                tools:ignore="ContentDescription" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                style="@style/recyclerviewStyle"
+                android:id="@+id/rv_adventure"
+                app:layout_constraintTop_toBottomOf="@id/adventure"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                style="@style/textStyle"
+                android:id="@+id/comedy"
+                android:text="@string/title_comedy"
+                app:layout_constraintTop_toBottomOf="@id/rv_adventure"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageButton
+                style="@style/imageButtonStyle"
+                android:id="@+id/icon_comedy"
+                app:layout_constraintBottom_toBottomOf="@+id/comedy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/comedy"
+                tools:ignore="ContentDescription" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                style="@style/recyclerviewStyle"
+                android:id="@+id/rv_comedy"
+                app:layout_constraintTop_toBottomOf="@id/comedy"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                style="@style/textStyle"
+                android:id="@+id/horor"
+                android:text="@string/tittle_horor"
+                app:layout_constraintTop_toBottomOf="@id/rv_comedy"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageButton
+                style="@style/imageButtonStyle"
+                android:id="@+id/icon_horor"
+                app:layout_constraintBottom_toBottomOf="@+id/horor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/horor"
+                tools:ignore="ContentDescription" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                style="@style/recyclerviewStyle"
+                android:id="@+id/rv_horor"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toBottomOf="@id/horor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:elevation="8dp"
+        android:src="@drawable/ic_favorite"
+        app:backgroundTint="@color/white"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_search1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layout_search1"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
